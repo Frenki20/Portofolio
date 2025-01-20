@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligjenca Artificiale Sot</title>
+    <link rel="stylesheet" href="C:\Users\kingm\OneDrive\Desktop\PROJEKTIWEB\blog.css">
+</head>
+<body>
+    <header>
+        <h1>Inteligjenca Artificiale Sot</h1>
+        <p>Eksploroni boten e teknologjise se se ardhmes</p>
+    </header>
+
+
+    <div class="container">
+        <article class="blog-post" id="hyrje">
+            <h2>Çfare eshte Inteligjenca Artificiale?</h2>
+            <img src="ai.jpg" alt="Ilustrim i Inteligjences Artificiale">
+            <p>Inteligjenca Artificiale (AI) eshte nje dege e shkences kompjuterike qe synon krijimin e sistemeve inteligjente te cilat mund te imitojne sjelljen dhe te menduarit njerezor. Keto sisteme mund te mesojne nga pervoja, te pershtaten me informacionin e ri dhe te kryejne detyra qe tradicionalisht kerkojne inteligjence njerezore.</p>
+            <div class="hidden-content" id="hyrje-content">
+                <p>Inteligjenca Artificiale eshte nje kombinim i algoritmeve dhe te dhenave te medha qe mundesojne krijimin e sistemeve qe perceptojne, arsyetojne dhe veprojne. 
+                    Perdorimi i teknikave si mesimi i makines (machine learning) i mundeson AI qe te permiresohet me kalimin e kohes, pa pasur nevoje per programim te detajuar per çdo detyre. 
+                    Per shembull, AI mund te mesoje te perktheje duke analizuar miliona tekste ose te parashikoje probleme shendetesore duke shqyrtuar te dhena mjekesore. 
+                    Po ashtu, AI perdoret per sistemet e rekomandimit, si per shembull ne Netflix, duke sugjeruar permbajtje ne baze te preferencave te perdoruesve.</p>
+            </div>
+            <button class="read-more-btn" onclick="toggleContent('hyrje-content')">Lexo me shume</button>
+        </article>
+
+        <article class="blog-post" id="perdorimet">
+            <h2>Perdorimet Kryesore te IA</h2>
+            <img src="useAI.png" alt="Perdorimet e IA">
+            <p>AI po gjen perdorim ne shume fusha te ndryshme, duke perfshire mjekesine, transportin, arsimin dhe biznesin. Ne mjekesi, AI po ndihmon ne diagnostikimin e semundjeve dhe zhvillimin e trajtimeve te personalizuara.</p>
+            <div class="hidden-content" id="perdorimet-content">
+                <p>Ne fushen e transportit, IA eshte thelbesore per zhvillimin e makinave autonome. Ne arsim, sisteme te bazuara ne AI po perdoren per te personalizuar pervojen e te mesuarit per çdo student. Bizneset po perdorin IA per te automatizuar proceset dhe per te permiresuar sherbimin ndaj klientit.</p>
+                <h3>Shembuj Konkrete te Perdorimit te IA:</h3>
+                <ul>
+                    <li>ChatGPT dhe sistemet e tjera te gjuhes natyrale per komunikim</li>
+                    <li>Sistemet e rekomandimit ne platforma si Netflix dhe Spotify</li>
+                    <li>Asistentet virtuale si Siri, Alexa dhe Google Assistant</li>
+                    <li>Sistemet e sigurise dhe mbikeqyrjes me njohje te fytyres</li>
+                    <li>Robotet ne prodhim dhe industri</li>
+                </ul>
+            </div>
+            <button class="read-more-btn" onclick="toggleContent('perdorimet-content')">Lexo me shume</button>
+        </article>
+
+      
+        <article class="blog-post" id="e-ardhmja">
+            <h2>E Ardhmja e Inteligjences Artificiale</h2>
+            <img src="FUture.jpg" alt="E Ardhmja e IA">
+            <p>E ardhmja e AI premton ndryshime revolucionare ne menyren se si jetojme dhe punojme. Ekspertet parashikojne qe IA do te vazhdoje te evoloje, duke u bere me e sofistikuar dhe me e integruar ne jeten tone te perditshme.</p>
+            <div class="hidden-content" id="e-ardhmja-content">
+                <p>Megjithate, zhvillimi i AI sjell edhe sfida etike dhe sociale qe duhet te adresohen. eshte e rendesishme te sigurohemi qe zhvillimi i AI te jete i pergjegjshem dhe te perfitoje te gjithe shoqerine.</p>
+            </div>
+            <button class="read-more-btn" onclick="toggleContent('e-ardhmja-content')">Lexo me shume</button>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Inteligjenca Artificiale Sot.Frenki Idrizi</p>
+    </footer>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const isHidden = content.style.display === 'none' || content.style.display === '';
+            content.style.display = isHidden ? 'block' : 'none';
+            
+            const button = content.nextElementSibling;
+            button.textContent = isHidden ? 'Lexo me pak' : 'Lexo me shume';
+        }
+    </script>
+</body>
+</html>
