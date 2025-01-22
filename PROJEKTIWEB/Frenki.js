@@ -16,16 +16,7 @@
             });
         });
 
-        // Timeline animation
-        function revealTimeline() {
-            const timelineItems = document.querySelectorAll('.timeline-item');
-            timelineItems.forEach(item => {
-                const itemTop = item.getBoundingClientRect().top;
-                if (itemTop < window.innerHeight - 100) {
-                    item.classList.add('visible');
-                }
-            });
-        }
+
 
         // Scroll to top button
         const scrollButton = document.querySelector('.scroll-top');
@@ -46,15 +37,6 @@
             });
         });
 
-               // Skill image rotation
-               document.querySelectorAll('.skill-img').forEach(img => {
-            img.addEventListener('click', () => {
-                img.style.transform = 'rotate(360deg)';
-                setTimeout(() => {
-                    img.style.transform = '';
-                }, 1000);
-            });
-        });
 
 
 
