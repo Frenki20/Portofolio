@@ -1,4 +1,4 @@
-        // Mobile menu toggle
+// Mobile menu toggle
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
 
@@ -44,7 +44,6 @@
                 behavior: 'smooth'
             });
         });
-
 
 
 
