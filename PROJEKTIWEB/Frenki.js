@@ -29,24 +29,6 @@
 
 
 
-        // Scroll to top button
-        const scrollButton = document.querySelector('.scroll-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                scrollButton.style.display = 'block';
-            } else {
-                scrollButton.style.display = 'none';
-            }
-            revealTimeline();
-        });
-
-        scrollButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
 
 
 
