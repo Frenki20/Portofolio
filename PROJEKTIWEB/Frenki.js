@@ -16,6 +16,17 @@
             });
         });
 
+           // Timeline animation
+        function revealTimeline() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            timelineItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                if (itemTop < window.innerHeight - 100) {
+                    item.classList.add('visible');
+                }
+            });
+        }
+
 
 
         // Scroll to top button
